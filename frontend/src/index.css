@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #ECEEE8;
+  }
+  ::selection {
+    background: #1F6B62;
+    color: #ECEEE8;
+  }
+  :focus-visible {
+    outline: 2px solid #1F6B62;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply bg-panel border border-line rounded;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded bg-signal px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-signal-dark disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded border border-line bg-panel px-4 py-2 text-sm font-medium text-ink transition-colors hover:border-signal hover:text-signal disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .field-input {
+    @apply w-full rounded border border-line bg-panel px-3 py-2 text-sm text-ink placeholder:text-graphite/60 focus:border-signal;
+  }
+  .label-text {
+    @apply text-xs text-graphite;
+  }
+}

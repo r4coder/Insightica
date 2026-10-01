@@ -1,0 +1,7 @@
+[
+  {"id": "q1", "question": "What was total revenue?", "checks": ["sql_success", "numeric_answer"]},
+  {"id": "q2", "question": "Which region had the highest sales?", "checks": ["sql_success", "grouping_answer"]},
+  {"id": "q3", "question": "Why did revenue decline in Q3 2024?", "checks": ["sql_success", "stats_success", "chart_success", "root_cause_findings"]},
+  {"id": "q4", "question": "Which product category grew fastest?", "checks": ["sql_success", "grouping_answer"]},
+  {"id": "q5", "question": "Are there any unusual values in the revenue column?", "checks": ["stats_success", "outlier_findings"]}
+]

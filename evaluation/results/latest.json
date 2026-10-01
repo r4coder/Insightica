@@ -1,0 +1,647 @@
+{
+  "mode": "mocked",
+  "results": [
+    {
+      "id": "q1",
+      "question": "What was total revenue?",
+      "status": "failed",
+      "checks": {
+        "sql_success": false,
+        "numeric_answer": false
+      },
+      "all_passed": false,
+      "validation_issues": [
+        {
+          "scope": "finding",
+          "index": 0,
+          "message": "evidence ref 'sql0[4].revenue' does not exist in the computed results"
+        }
+      ],
+      "trace": [
+        {
+          "agent": "inspector",
+          "status": "completed"
+        },
+        {
+          "agent": "manager",
+          "status": "completed"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "skipped"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "skipped"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "skipped"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "partial"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "partial"
+        },
+        {
+          "agent": "finalize",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Which region had the highest sales?",
+      "status": "failed",
+      "checks": {
+        "sql_success": false,
+        "grouping_answer": false
+      },
+      "all_passed": false,
+      "validation_issues": [
+        {
+          "scope": "finding",
+          "index": 0,
+          "message": "evidence ref 'sql0[4].revenue' does not exist in the computed results"
+        }
+      ],
+      "trace": [
+        {
+          "agent": "inspector",
+          "status": "completed"
+        },
+        {
+          "agent": "manager",
+          "status": "completed"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "skipped"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "skipped"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "skipped"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "partial"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "partial"
+        },
+        {
+          "agent": "finalize",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Why did revenue decline in Q3 2024?",
+      "status": "failed",
+      "checks": {
+        "sql_success": false,
+        "stats_success": true,
+        "chart_success": false,
+        "root_cause_findings": false
+      },
+      "all_passed": false,
+      "validation_issues": [
+        {
+          "scope": "finding",
+          "index": 0,
+          "message": "evidence ref 'sql0[4].revenue' does not exist in the computed results"
+        }
+      ],
+      "trace": [
+        {
+          "agent": "inspector",
+          "status": "completed"
+        },
+        {
+          "agent": "manager",
+          "status": "completed"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "skipped"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "skipped"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "skipped"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "partial"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "partial"
+        },
+        {
+          "agent": "finalize",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Which product category grew fastest?",
+      "status": "failed",
+      "checks": {
+        "sql_success": false,
+        "grouping_answer": false
+      },
+      "all_passed": false,
+      "validation_issues": [
+        {
+          "scope": "finding",
+          "index": 0,
+          "message": "evidence ref 'sql0[4].revenue' does not exist in the computed results"
+        }
+      ],
+      "trace": [
+        {
+          "agent": "inspector",
+          "status": "completed"
+        },
+        {
+          "agent": "manager",
+          "status": "completed"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "skipped"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "skipped"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "skipped"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "partial"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "partial"
+        },
+        {
+          "agent": "finalize",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Are there any unusual values in the revenue column?",
+      "status": "failed",
+      "checks": {
+        "stats_success": true,
+        "outlier_findings": true
+      },
+      "all_passed": true,
+      "validation_issues": [
+        {
+          "scope": "finding",
+          "index": 0,
+          "message": "evidence ref 'sql0[4].revenue' does not exist in the computed results"
+        }
+      ],
+      "trace": [
+        {
+          "agent": "inspector",
+          "status": "completed"
+        },
+        {
+          "agent": "manager",
+          "status": "completed"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "skipped"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "skipped"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "sql_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "analyst_agent",
+          "status": "skipped"
+        },
+        {
+          "agent": "visualization_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "partial"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "retry"
+        },
+        {
+          "agent": "report_agent",
+          "status": "completed"
+        },
+        {
+          "agent": "validation",
+          "status": "partial"
+        },
+        {
+          "agent": "finalize",
+          "status": "completed"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total": 5,
+    "passed": 1,
+    "pass_rate": 0.2
+  }
+}
