@@ -1,4 +1,4 @@
-# Multi-Agent Data Analyst
+# Insightica
 
 Upload a CSV / XLSX / Parquet file, ask a question in plain English, and get back a business-
 friendly report where **every number is computed by real code and verified against the data**
